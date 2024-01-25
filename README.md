@@ -7,7 +7,7 @@
 - **Nombre:** Leandro Ren
 - **Correo Electrónico:** leandroezequielren@gmail.com
 - **LinkedIn:** www.linkedin.com/in/leandroren
-- **Link Portfolio:** 
+- **Link Portfolio:** https://leandroren.github.io/Portfolio2024/
 
 ## Mis Habilidades
 
