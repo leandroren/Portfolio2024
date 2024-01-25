@@ -1,0 +1,423 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0F0F0F;
+  color: #ECDABA;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Estilos normales para el modo claro */
+body.light-mode {
+  background-color: #0F0F0F;
+  color: #ECDABA;
+}
+
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: blur(2px);
+  z-index: -2;
+}
+
+h2{
+    font-size: 35px;
+    padding: 40px 0;
+    font-weight: bold;
+}
+
+h3{
+  font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ECDABA;
+}
+
+a:hover{
+  color: #ECDABA;
+  text-shadow: 1px 1px 2px #0d4340;
+}
+
+svg{
+  color: #ECDABA;
+}
+
+svg:hover{
+    color: #056968;
+    transition: 0.3s ease all;
+}
+
+/* Navegacion */
+
+header{
+  background-color: #b2fffc1a;
+  box-shadow: 2px 2px 5px 2px #b9edff2f;
+}
+
+nav h1{
+  font-size: 1.4rem;
+  color: #ECDABA;
+}
+
+nav h1:hover{
+  color: #ECDABA;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    color: #ECDABA;
+
+}
+
+.nav-link{
+    font-size: 18px;
+    color: #ECDABA;
+}
+
+.nav-link:hover{
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #dddddd;
+
+}
+
+nav ul:hover li { filter: blur(2px);
+}
+
+ nav ul li:hover { filter: blur(0px);
+}
+
+.navbar-toggler{
+background-color: #159997;
+}
+
+/* sobremi */
+
+.inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.descripcion{
+    width: 60%;
+}
+
+button {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: .5rem;
+    border: 2px solid #0d4340;
+    border-radius: 8px;
+    position: relative;
+    background-color: #056968;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #22c9c6d3;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
+  button:hover, button:focus {
+    color: rgb(34, 32, 32);
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+   }
+
+   /* Sobre mi */
+   .sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .sobremi-descripcion {
+    width: 60%;
+   }
+
+   /* habilidades */
+
+.habilidades{
+  border: 3px solid #0d4340a9;
+  background-color: #0F0F0F;
+  border-radius: 8px;
+  margin: 5rem 0;}
+  
+  .logos-habilidades{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 2rem;
+  }
+  
+  .logos-habilidades img{
+      width: 80px;
+      margin: 2rem;
+  }
+  
+  /* fin de habilidades */
+
+.img-personal {
+    width: 30%;
+    opacity: .8;
+    filter:blur(.5px);
+    margin-right: 3rem;
+}
+
+.img-personal img {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #b2fffc1a;
+  box-shadow: #b2fffc1a 0px 2px 2px 2px;
+}
+
+/* Fin de sobre mí */
+
+
+/* proyectos */
+
+   .proyectos-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+
+   .card {
+    width: 250px;
+    height: 250px;
+    transition: all 0.4s;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 25px 20px;
+    box-shadow: 0px 0px 2px 2px  rgba(255, 255, 255, 0.705);
+  }
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .card .first-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px 2px  rgba(255, 255, 255, 0.705);
+    padding: 2px;
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+   form{
+    width: 40%;
+    margin: 0 auto;
+   }
+
+   form .form-control{
+    border: 1px solid #68C7C0;;
+    box-shadow: 1px 2px #68C7C0;
+   }
+
+   footer span{
+    color: #efede4;
+  }
+
+
+  @media (width < 768px) {
+
+h2{
+  font-size: 26px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 14px;
+}
+
+.nav-link{
+  font-size: 14px;
+  color: #ECDABA;
+}
+
+.inicio{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.inicio h1{
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.inicio span{
+  font-size: 14px !important;
+}
+
+
+/* sobremi */
+
+.sobremi{
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.sobremi-descripcion {
+  width: 90%;
+ }
+
+.descripcion{
+  width: 100%;
+  padding: 10px;
+}
+
+
+
+ /* habilidades */
+
+.habilidades{
+margin: 1rem 0;
+}
+
+.logos-habilidades img{
+    width: 60px;
+    margin: .5rem;
+}
+
+.habilidades p{
+  font-size: 10px;
+  text-align: center;
+}
+
+/* fin de habilidades */
+
+.img-personal {
+  width: 80%;
+  margin: 0;
+}
+
+.img-personal img {
+padding: 10px;
+border-radius: 15%;
+
+}
+
+/* Fin de sobre mí */
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ form{
+  width: 90%;
+  margin: 0 auto;
+ }
+
+
+ footer span{
+  font-size: 10px;
+}
+
+form  .btn-enviar{
+  width: 100px;
+  margin-left: 8px;
+}
+
+
+  }
