@@ -16,7 +16,7 @@
 - SASS
 - JavaScript
 - Frameworks CSS (Bootstrap)
-- React como libreria JavaScript (En curso)
+- React como libreria JavaScript
 - Diseño Responsivo
 - Figma
 - Photoshop
